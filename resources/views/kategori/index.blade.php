@@ -68,11 +68,6 @@
                                 </td>
                             </tr>
                            @endforeach
-                           <tr>
-                               <td>
-                               
-                               </td>
-                           </tr>
                        </tbody>
                     </thead>
                 </table>
