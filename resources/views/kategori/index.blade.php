@@ -59,6 +59,7 @@
                                 <td>{{ $k->hari_pengerjaan }}</td>
                                 <td>{{ $k->ttd }}</td>
                                 <td>
+                                    <a href="/detail/{{ $k->id }}/update" class="btn btn-warning">Edit</a>
                                     <form action="/kategoris/{{ $k->id }}" method="POST" class="d-inline">
                                         @method('delete')
                                         @csrf
@@ -67,6 +68,11 @@
                                 </td>
                             </tr>
                            @endforeach
+                           <tr>
+                               <td>
+                               
+                               </td>
+                           </tr>
                        </tbody>
                     </thead>
                 </table>

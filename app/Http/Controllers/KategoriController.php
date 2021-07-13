@@ -61,9 +61,11 @@ class KategoriController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Kategori $kategori)
     {
-        //
+        return view('kategori.edit', compact('kategori'), [
+            "title" => "FORM EDIT KATEGORI"
+        ]);
     }
 
     /**
@@ -73,9 +75,17 @@ class KategoriController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Kategori $kategori)
     {
-        //
+        Kategori::where('id', $kategori->id)
+        ->update([
+            'pemeriksa_ujian' => $request->pemeriksa_ujian,
+            'pengesahan_ujian' => $request->pengesahan_ujian,
+            'durasi_periksa' => $request->durasi_periksa,
+            'hari_pengerjaan' => $request->hari_pengerjaan,
+            'ttd' => $request->ttd
+        ]);
+        return redirect('/kategoris')->with('status', 'Data Berhasil Diedit');
     }
 
     /**

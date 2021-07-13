@@ -32,6 +32,8 @@ Route::get('/kategoris', 'KategoriController@index');
 Route::get('/detail/create', 'KategoriController@create');
 Route::post('/kategoris', 'KategoriController@store');
 Route::delete('/kategoris/{kategori}', 'KategoriController@destroy');
+Route::get('/detail/{kategori}/update', 'KategoriController@edit');
+Route::patch('/update/{kategori}', 'KategoriController@update');
 
 
 // END CRUD KATEGORI
