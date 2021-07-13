@@ -26,7 +26,7 @@
                     }
                 </style>
 
-                <a href="/detail/create" class="btn btn-dark my-3">Tambah Data</a>
+                <a href="/detail/creates" class="btn btn-dark my-3">Tambah Data</a>
 
                 {{-- @foreach($kategori as $k)
                     
