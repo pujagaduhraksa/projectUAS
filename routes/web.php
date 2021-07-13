@@ -28,6 +28,10 @@ Route::patch('/detail/{exams}', 'ExamsController@update');
 
 // CRUD KATEGORI
 
+Route::get('/kategoris', 'KategoriController@index');
+Route::get('/detail/create', 'KategoriController@create');
+Route::post('/kategoris', 'KategoriController@store');
+Route::delete('/kategoris/{kategori}', 'KategoriController@destroy');
 
 
 // END CRUD KATEGORI

@@ -28,6 +28,9 @@
                 <li class="nav-item">
                   <a class="nav-link {{ ($title === "Details")  ? 'active' : '' }}" href="{{ url('/detail') }}">Detail</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link {{ ($title === "Kategori")  ? 'active' : '' }}" href="{{ url('/kategoris') }}">Kategori</a>
+                </li>
               </ul>
             </div>
         </nav>
