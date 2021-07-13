@@ -25,3 +25,9 @@ Route::get('/detail/{exams}/edit', 'ExamsController@edit');
 Route::patch('/detail/{exams}', 'ExamsController@update');
 
 // END CRUD
+
+// CRUD KATEGORI
+
+
+
+// END CRUD KATEGORI
