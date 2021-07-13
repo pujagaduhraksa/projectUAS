@@ -62,6 +62,13 @@
                             <div class="invalid-feedback"> {{ $message }}</div>
                           @enderror
                     </div>
+                    <div class="form-group">
+                      <label for="kategori_id">Kategori</label>
+                      <input type="text" class="form-control @error('kategori_id') is-invalid @enderror" id="kategori_id" placeholder="Masukkan Kategori" name="kategori_id" value="{{ old('kategori_id')}}">
+                        @error('kategori_id')
+                          <div class="invalid-feedback"> {{ $message }}</div>
+                        @enderror
+                  </div>
         
                     <button type="submit" class="btn btn-dark">Tambah Data!</button>
                     <br>

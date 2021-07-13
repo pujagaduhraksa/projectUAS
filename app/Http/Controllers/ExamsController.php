@@ -102,7 +102,9 @@ class ExamsController extends Controller
             'nama_pengawas' => $request->nama_pengawas,
             'durasi_ujian' => $request->durasi_ujian,
             'hari_pelaksanaan' => $request->hari_pelaksanaan,
-            'pembuat_soal' => $request->pembuat_soal
+            'pembuat_soal' => $request->pembuat_soal,
+            'kategori_id' => $request->kategori_id
+
         ]);
         return redirect('/detail')->with('status', 'Data Berhasil Diedit');
     }

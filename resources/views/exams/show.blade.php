@@ -38,6 +38,7 @@
                       <p class="card-text">{{ $exams->durasi_ujian }}</p>
                       <p class="card-text">{{ $exams->hari_pelaksanaan }}</p>
                       <p class="card-text">{{ $exams->pembuat_soal }}</p>
+                      <p class="card-text">{{ $exams->kategori_id }}</p>
 
                       {{-- <button type="submit" class="btn btn-primary">Edit</button> --}}
                       <a href="{{ $exams->id }}/edit" class="btn btn-dark">Edit</a>

@@ -38,6 +38,7 @@
                             <th scope="col">Durasi Ujian</th>
                             <th scope="col">Hari Pelaksanaan</th>
                             <th scope="col">Pembuat Soal</th>
+                            <th scope="col">Kategori</th>
                         </tr>
                        <tbody>
                            @foreach($exams as $e)
@@ -48,6 +49,7 @@
                                 <td>{{ $e->durasi_ujian }}</td>
                                 <td>{{ $e->hari_pelaksanaan }}</td>
                                 <td>{{ $e->pembuat_soal }}</td>
+                                <td>{{ $e->kategori_id }}</td>
                             </tr>
                            @endforeach
                        </tbody>
